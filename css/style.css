@@ -1,0 +1,54 @@
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+      display: inline-block;
+    }
+    .navbar-nav {
+      margin-top: 0.5rem;
+    }
+    .navbar-nav .nav-link {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+    .navbar-toggler {
+      display: block;
+    }
+  }
+
+
+.c-light {
+    background-color: #FEFAE0;
+    
+}
+.c-dark {
+    background-color: #264653;
+
+}
+.c-green {
+    background-color: #2A9D8F;
+
+}
+.c-yellow {
+    background-color: #E9C46A;
+
+}
+.c-orange {
+    background-color: #F4A261;
+    
+}
+.c-red {
+    background-color: #E76F51;
+    
+}
+
+.navbar-brand{
+    font-weight: 900;
+    font-family: ;
+}
+
+.navbar-brand img {
+    width: 50px;
+    height: 50px;
+}
