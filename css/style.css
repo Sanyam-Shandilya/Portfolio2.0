@@ -1,3 +1,6 @@
+*{
+  padding: 0px;
+}
 @media only screen and (max-width: 768px) {
     .navbar-brand {
       display: inline-block;
@@ -20,11 +23,12 @@
 
 .c-light {
     background-color: #FEFAE0;
+    color: #264653;
     
 }
 .c-dark {
     background-color: #264653;
-
+    color: #FEFAE0;
 }
 .c-green {
     background-color: #2A9D8F;
@@ -43,12 +47,58 @@
     
 }
 
-.navbar-brand{
-    font-weight: 900;
-    font-family: ;
+.nav-link,.navbar-brand{
+  text-decoration: none !important;  
+  font-weight: 900;
+  font-family: "comic Sans",sans-serif;
+  color: #E76F51;
 }
-
-.navbar-brand img {
+.nav-link:hover{
+  color: #E76F51;
+  transform: scale(1.1,1.1);
+  transition: 2s;
+}
+.nav-icon {
     width: 50px;
     height: 50px;
+}
+#logo{
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  top: -1px;
+  left: 50px;
+  z-index: 100;
+}
+
+.navbar-collapse {
+  font-size: large;
+  font-weight: 900;
+  margin:auto;
+
+}
+.container-fluid{
+  margin: auto !important;
+  justify-content: center;
+  align-items: center;
+
+}
+
+/* .hero-container{
+  background-image:linear-gradient(to bottom, #264653,#2a9d909d,#e9c56a9e,#f4a361af, #e76f51b9), url("../images/background.png");
+  height: 1024px;  
+} */
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-img-container {
+  flex: 1;
+}
+
+.hero-text {
+  flex: 1;
+  text-align: right; /* Align text to the right */
 }
