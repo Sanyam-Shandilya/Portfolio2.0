@@ -1,8 +1,9 @@
 console.log("hi");
-var toogle = document.getElementById("toogle");
-var body = document.querySelector("body");
-var jumbo = document.getElementsByClassName("navbar");
-
+const toogle = document.getElementById("toogle");
+const body = document.querySelector("body");
+const jumbo = document.getElementsByClassName("navbar");
+const dynamic = document.getElementById("dynamic-text");
+const skill_list = ["Web Developer", "Data Science", "Data Analysis", "Machine Learning", "Deep Learning", "Text Analysis", "Text Processing", "Data Processing"];
 
 toogle.addEventListener("click", () => {
     var img_toogle = toogle.querySelector("img");

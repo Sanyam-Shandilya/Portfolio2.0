@@ -1,59 +1,267 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Sanyam Shandilya</title>
-        <link rel="stylesheet" href="css\style.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-        
-    </head>
-    <body class="c-light">
-        <nav class="navbar navbar-expand-lg navbar-fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
-                    <img  id="logo" src="images/Sanyam-logo.png" alt="Sanyam Shandilya" />
-                </a>
-                <div class="navbar-collapse collapse">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Project</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Certification</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                
-                <button id="toogle" type="button" class="btn c-yellow">
-                    <img class="nav-icon" alt="toogle btn" src="images/sun.png">
-                </button>
-              </div>
-            </nav>
-            <div class="hero-container">
-                <div class="hero-img-container img-fluid">
-                    <img class="hero-img" src="images/hero-removebg-preview.png" alt="Sanyam Shandilya" />
-                </div>
-                <div class="hero-text">
-                    <h1>Sanyam Shandilya</h1>
-                    <h2>Web Developer</h2>
-                    <a href="contact.html" class="btn c-yellow">Contact Me</a>
-                </div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanyam Shandilya</title>
+    <link rel="stylesheet" href="css\style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="c-light">
+    <nav class="navbar navbar-expand-lg navbar-fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="logo" src="images/Sanyam-logo.png" alt="Sanyam Shandilya" />
+          <span>Sanyam Shandilya</span>
+        </a>
+        <div class="navbar-collapse collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Certification</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <button id="toogle" type="button" class="btn c-yellow">
+            <img class="nav-icon" alt="toogle btn" src="images/sun.png" />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="domain-container n-border">
+      <div class="domain-img-container img-fluid background-image">
+        <img class="hero-img" src="images\chimmum.png" alt="Icon" />
+      </div>
+      <div class="hero-text">
+        <h1>Sanyam Shandilya</h1>
+        <h2>I am a <h2 id="dynamic-text"></h2></h2>
+        <a href="contact.html" class="btn c-yellow">Contact Me</a>
+      </div>
+    </div>
+    <div class="domain-container">
+      <h3>About Me</h3>
+      <p>
+        Sanyam Shandilya is a web developer based in Bangalore, India. He is
+        passionate about web development and has a strong background in the
+        field of web development. He is also passionate about technology and has
+        a strong background in the field of technology. Sanyam Shandilya is also
+        passionate about technology and has a strong background in the field of
+        technology. Sanyam Shandilya is also passion about technology and has a
+        strong background in the field of technology. Sanyam Shandilya is also
+        passion
+      </p>
+      <div class="domain-img-container">
+        <img
+          class="hero-img"
+          src="images/hero-removebg-preview.png"
+          alt="Sanyam Shandilya"
+        />
+      </div>
+    </div>
+
+    <!--Project section-->
+    <div class="domain-container">
+      <h1>Project</h1>
+      <div class="row">
+        <div class="domain-img-container img-fluid">
+          <img
+            class="domain-img"
+            src="images/project-removebg-preview.png"
+            alt="Sanyam Shandilya"
+          />
+          <div class="domain-text">
+            <h1>Sanyam Shandilya</h1>
+            <h2>Web Developer</h2>
+            <a href="contact.html" class="btn c-yellow">Contact Me</a>
+          </div>
+        </div>
+        <div class="domain-img-container img-fluid">
+          <img
+            class="domain-img"
+            src="images/project-removebg-preview.png"
+            alt="Sanyam Shandilya"
+          />
+          <div class="domain-text">
+            <h1>Sanyam Shandilya</h1>
+            <h2>Web Developer</h2>
+            <a href="contact.html" class="btn c-yellow">Contact Me</a>
+          </div>
+        </div>
+        <div class="domain-img-container img-fluid">
+          <img
+            class="domain-img"
+            src="images/project-removebg-preview.png"
+            alt="Sanyam Shandilya"
+          />
+          <div class="domain-text">
+            <h1>Sanyam Shandilya</h1>
+            <h2>Web Developer</h2>
+            <a href="contact.html" class="btn c-yellow">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Certification section-->
+    <div class="domain-container">
+      <h1>Certification</h1>
+      <div class="domain-img-container img-fluid">
+        <img
+          class="domain-img"
+          src="images\certificate\analyze.png"
+          alt="Sanyam Shandilya"
+        />
+        <div class="domain-text">
+          <h1>Sanyam Shandilya</h1>
+          <h2>Web Developer</h2>
+          <a href="contact.html" class="btn c-yellow">Contact Me</a>
+        </div>
+      </div>
+      <div class="domain-img-container img-fluid">
+        <img
+          class="domain-img"
+          src="images\certificate\hack-problem-intermediate.png"
+          alt="Sanyam Shandilya"
+        />
+        <div class="domain-text">
+          <h1>Sanyam Shandilya</h1>
+          <h2>Web Developer</h2>
+          <a href="contact.html" class="btn c-yellow">Contact Me</a>
+        </div>
+      </div>
+      <div class="domain-img-container img-fluid">
+        <img
+          class="domain-img"
+          src="images\certificate\fundamentals.png"
+          alt="Sanyam Shandilya"
+        />
+        <div class="domain-text">
+          <h1>Sanyam Shandilya</h1>
+          <h2>Web Developer</h2>
+          <a href="contact.html" class="btn c-yellow">Contact Me</a>
+        </div>
+      </div>
+    </div>
+    <!--Skills section-->
+    <div class="domain-container">
+      <h1>Skills</h1>
+    </div>
+    <!--Education section-->
+    <div class="domain-container">
+      <h1>Education</h1>
+    </div>
+    <!--Contact section-->
+    <div class="domain-container">
+      <h1>Contact</h1>
+      <div class="contact-card">
+        <form action="POST" name="contact" netlify>
+          <div class="row mb-1">
+            <div class="col">
+              <label class="form-label">First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                class="form-control"
+                placeholder="First name"
+                aria-label="First name"
+                required
+              />
             </div>
-            
-        <script type="text/javascript" src="js\main.js"></script>
-    </body>
-    </html>
-    
+            <div class="col">
+              <label class="form-label">Last Name</label>
+              <input
+                type="text"
+                name="lastName"
+                class="form-control"
+                placeholder="Last name"
+                aria-label="Last name"
+                required
+              />
+            </div>
+          </div>
+          <div class="row mb-1">
+            <div class="col">
+              <label class="form-label">Email</label>
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Email"
+                required
+              />
+            </div>
+            <div class="col">
+              <label class="form-label">Phone (optional)</label>
+              <input
+                type="text"
+                name="phone"
+                class="form-control"
+                placeholder="Phone"
+                aria-label="Phone"
+              />
+            </div>
+          </div>
+          <div class="row mb-1">
+            <div class="col">
+              <label class="form-label">Subject</label>
+              <input
+                type="text"
+                name="subject"
+                class="form-control"
+                placeholder="Subject"
+                aria-label="Subject"
+                required
+              />
+            </div>
+          </div>
+          <div class="row mb-1">
+            <div class="col">
+              <label class="form-label">Message</label>
+              <textarea
+                type="text"
+                name="message"
+                class="form-control"
+                placeholder="Message"
+                aria-label="Message"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <button type="submit" style="width: 100%" class="btn mt-2">
+            Submit
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1>Sanyam Shandilya</h1>
+            <h2>Web Developer</h2>
+            <a href="contact.html" class="btn c-yellow">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js\main.js"></script>
+  </body>
+</html>
