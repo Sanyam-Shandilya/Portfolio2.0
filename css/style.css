@@ -1,12 +1,12 @@
 *{
-  padding: 0px;
-  margin: auto !important;
+  font-family: "comic Sans",sans-serif;
   text-decoration: none !important;
-  width:100%;
 }
 @media only screen and (max-width: 768px) {
     .navbar-brand {
+      text-align: center;
       display: inline-block;
+      width: 100%;
     }
     .navbar-nav {
       margin-top: 0.5rem;
@@ -52,7 +52,6 @@
 
 .nav-link,.navbar-brand,.navbar-brand:hover{ 
   font-weight: 900;
-  font-family: "comic Sans",sans-serif;
   color: #E76F51;
 }
 .nav-link:hover{
@@ -84,14 +83,12 @@
   justify-content: center;
   align-items: center;
 }
-.n-border{
-  border: none !important;
-  height:30rem;
-  margin-bottom: 5rem !important;
-}
 .hero-img {
-  width: 420px;
-  height: 500px;
+  object-fit: contain;
+  min-width: 200px;
+  min-height: 250px;
+  max-width: 400px;
+  max-height: 500px;
   border-radius: 10%;
 }
 .background-image{
@@ -99,9 +96,55 @@
   background-repeat: no-repeat;
   background-position: center center;
 }
+.background-image1{
+  background-image: url("../images/graph (1).png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.background-image2{
+  background-image: url("../images/graph (2).png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
 .hero-text {
   flex: 1;
   text-align: center;
+}
+.hero-text h1{
+  font-size: 400%;
+  font-weight: 1000;
+}
+.hero-text h2{
+  font-size: 200%;
+  font-weight: 500;
+}
+.hero-btn {
+  font-size: 20px;
+  font-weight: 900;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  background-color: #E76F51;
+  color: #E9C46A;
+  width: 90%;
+  text-align: center;
+  margin-top: 1rem !important;
+  cursor: pointer;
+}
+.hero-btn:hover {
+  background-color: #E9C46A;
+  color: #E76F51;
+  transform: scale(1.1,1.1);
+  transition: 1s;
+}
+.typewrite{
+  color: #F4A261;
+  text-decoration: underline !important;
+}
+.typewrite:hover {
+  color: #E76F51;
+  transform: scale(1.1,1.1);
+  transition: 1s;
 }
 .domain-container {
   display: flex;
@@ -110,9 +153,9 @@
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
-  border-top: 1px #2A9D8F dotted;
-  border-spacing: 30px;
   text-align: center;
+  padding:0px 20px;
+  margin:1.5rem;
 }
 .domain-img-container {
   flex: 1;
@@ -122,6 +165,7 @@
   align-content: center;
   justify-content: space-around;
   align-items: center;
+  position:relative;
 }
 .domain-img{
   position: relative;
@@ -130,11 +174,60 @@
   padding:10px;
 }
 
+/* Centered text styles */
+.centered {
+  z-index: 2; /* Ensures text is above the faded image */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #2A9D8F; /* Text color */
+  opacity: 0; /* Initially hidden */
+  font-weight: 900;
+  font-size: 25px;
+  transition: opacity 0.5s ease-in-out;
+  text-align: center; /* Centers the text horizontally */
+}
 
+/* Project image styles */
+.project-img {
+  display: block;
+  width: 90%;
+  height: 90%;
+  max-height: 350px;
+  max-width: 350px;
+  border-radius: 10px;
+  transition: filter 1s ease; /* Smooth transition for filter */
+}
 
-.contact-card{
+/* Container for the project card */
+.project-card {
+  position: relative; /* Needed for absolute positioning of .centered */
+  padding: 10px;
+  margin: 10px;
+  background-color: #E76F51;
+  color: #E9C46A;
+  border-radius: 20px;
+}
+
+/* Hover effects */
+.project-card:hover .project-img {
+  filter: brightness(30%);
+}
+
+.project-card:hover .centered {
+  opacity: 1; /* Make text visible when the card is hovered */
+}
+
+/* Ensures text stays visible when it's specifically hovered */
+.centered:hover {
+  opacity: 1;
+}
+
+/* Contact card styles */
+.contact-card {
   padding: 40px;
-  width:50%;
+  width: 50%;
   background-color: #E76F51;
   color: #E9C46A;
   border-radius: 20px;
