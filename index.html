@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sanyam Shandilya</title>
     <link rel="stylesheet" href="css\style.css" />
     <link
@@ -12,72 +12,118 @@
       crossorigin="anonymous"
     />
   </head>
-  <body class="c-light">
+  <body class="c-dark">
+    <button type="button" class="scroll_btn" onclick="scrollToId('contact')"></button>
+    <!-- Navigation header -->
     <nav class="navbar navbar-expand-lg navbar-fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <span>Sanyam Shandilya</span>
-        </a>
-        <div class="navbar-collapse collapse">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Certification</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-          <button id="toogle" type="button" class="btn c-yellow">
-            <img class="nav-icon" alt="toogle btn" src="images/sun.png" />
-          </button>
-        </div>
+      <a class="navbar-brand" href="#">
+        <span>Sanyam Shandilya</span>
+      </a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#certificates">Certification</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
+      <button class="navbar-toggler btn" type="button" onclick="openNav()">
+        <span><i class="fa-solid fa-bars" style="color: #12d640"></i></span>
+      </button>
     </nav>
-    <div class="domain-container">
+    <!-- Sidebar container -->
+    <div id="mySidebar" class="sidebar">
+      <!-- Close button -->
+      <a href="javascript:void(0)" class="closebtn btn" onclick="closeNav()"
+        >×</a
+      >
+      <!-- Navigation links -->
+      <a href="#hero" onclick=>Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certification</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero -->
+    <div class="hero-container" id="hero">
       <div class="domain-img-container img-fluid background-image">
         <img class="hero-img" src="images\chimmum.png" alt="Icon" />
       </div>
-      <div class="hero-text">
+      <div class="hero-text" style="padding: 10px; text-align: left">
         <h1>Sanyam Shandilya</h1>
         <h2>
-          I have knowledge of 
-          <a href="" class="typewrite" data-period="2000" data-type='[ "Web Development", "Data Science", "Data Analysis", "Machine Learning", "Deep Learning", "Text Analysis", "Text Processing", "Data Processing" ]'>
+          I'm a
+          <a
+            href=""
+            class="typewrite"
+            data-period="2000"
+            data-type='[ "Developer", "Data Scientist", "Programmer", "Data Analyst", "ML Learner", "DL Learner", "NLP Enthusiast" ]'
+          >
             <span class="wrap"></span>
           </a>
         </h2>
-        <div class="hero-btn" href="contact.html">
-          Contact Me
+        <div class="hero-btn">
+          <a href="https://github.com/Sanyam-Shandilya/"
+            ><i class="fa-brands fa-github-alt"></i
+          ></a>
+          <a href="mailto:sanyamshandilya8@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+          <a href="https://www.hackerrank.com/sanyamshandilya8?hr_r=1"
+            ><i class="fa-brands fa-hackerrank"></i
+          ></a>
+          <a href="https://leetcode.com/SanyamShandilya/"
+            ><i class="fa-solid fa-code"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/sanyam-shandilya-98b60a201/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </div>
       </div>
     </div>
-    <div class="domain-container">
+
+    <!-- About -->
+    <div class="hero-container" id="about">
       <div class="hero-text">
-      <h1>About Me</h1>
-      <p>
-        Hi, I'm <strong>Sanyam Shandilya</strong>, 
-        a <strong>B.Tech undergraduate</strong> student of 
-        <strong>Computer Science and Engineering with specialization in Data Science</strong>.
-        Being a Data Enthusiast, I love doing analysis of data and finding hidden patterns, I have worked on textual as well as image data.
-        My tech-stack include <strong>Python, R, Basics of web-development (HTML,CSS, Javascript), Java</strong>.
-        I am familiar with <strong>SQL</strong> and <strong>No-SQL</strong> programming.
-        I have done projects based on the <strong>Power-BI</strong> in order to have hands dirty in <strong>data visualization</strong>.
-        I have also worked on a project based on the <strong>Machine Learning and Deep Learning</strong> in order to have hands-on experience of <strong>data analysis, data preprocessing, textual analysis and textual data preprocessing</strong> etc.
-        I am also passionate about technology.
-        Talking about hobbies, I love solving puzzels like Rubik Cubes, I also love listining to music and editing videos and a little bit of reading books and writting stories.
-      </p>
-    </div>
+        <h1>About Me</h1>
+        <p>
+          Hi, I'm <strong>Sanyam Shandilya</strong>, a
+          <strong>B.Tech</strong> undergraduate student of
+          <strong> Computer Science and Engineering</strong> with specialization
+          in <strong>Data Science</strong>. Being a Data Enthusiast, I love
+          doing analysis of data and finding hidden patterns, I have worked on
+          textual as well as image data. My tech-stack include
+          <strong>Python</strong>, <strong>R</strong>, Basics of web-development
+          (<strong>HTML</strong>,<strong>CSS</strong>,
+          <strong>Javascript</strong>), <strong>Java</strong>. I am familiar
+          with <strong>SQL</strong> and <strong>No-SQL</strong> programming. I
+          have done projects based on the <strong>Power-BI</strong> in order to
+          have hands dirty in data visualization. I have also worked on a
+          project based on the <strong>Machine Learning</strong> and
+          <strong>Deep Learning</strong> in order to have hands-on experience of
+          data analysis, data preprocessing, textual analysis and textual data
+          preprocessing etc. I am also passionate about technology. Talking
+          about hobbies, I love solving puzzels like Rubik Cubes, I also love
+          listining to music and editing videos and a little bit of reading
+          books and writting stories.
+        </p>
+      </div>
       <div class="domain-img-container img-fluid background-image1">
         <img
           class="hero-img"
@@ -88,131 +134,152 @@
     </div>
 
     <!--Project section-->
+    <h1 class="domain" id="projects">Project</h1>
     <div class="domain-container">
-      <div class="hero-text">
-        <h1>Project</h1>
+      <div class="domain-item">
+        <a
+          href="https://github.com/Sanyam-Shandilya/Movie_Recommendation_System"
+        >
+          <div class="domain-img-container project-card">
+            <img
+              class="project-img"
+              src="images\projects\movie.png"
+              alt="Sanyam Shandilya"
+            />
+            <p class="centered">Movie Recommendation system</p>
+          </div>
+        </a>
       </div>
-      <div class="row">
-        <div class="domain-img-container img-fluid project-card">
-          <img
-            class="project-img"
-            src="https://private-user-images.githubusercontent.com/106344462/240247545-94e78770-40ce-4e2f-ac59-06f9376c2fd9.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc2MDAxMDYsIm5iZiI6MTcwNzU5OTgwNiwicGF0aCI6Ii8xMDYzNDQ0NjIvMjQwMjQ3NTQ1LTk0ZTc4NzcwLTQwY2UtNGUyZi1hYzU5LTA2ZjkzNzZjMmZkOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIxMFQyMTE2NDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yZWE2ZDlkMjFjOGFhNDdiYTUwZWE1NmI2N2EwZTE5ODI0ODg2ZTk2ODdlODc5Zjk2ZjBiZmRlMjA5YzRiNzYwJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.xs2dnVaIotUS9leHPkJJjDh1ZWMZlrMrtJ2_CHK-rfI"
-            alt="Sanyam Shandilya"
-          />
-          <p class="centered">
-            Movie Recommendation system
-          </p>
-        </div>
-        <div class="domain-img-container img-fluid project-card">
-          <img
-            class="project-img"
-            src="https://private-user-images.githubusercontent.com/106344462/240234816-36fc36d0-8986-4535-99e7-401fa17feff8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc2MDMwODgsIm5iZiI6MTcwNzYwMjc4OCwicGF0aCI6Ii8xMDYzNDQ0NjIvMjQwMjM0ODE2LTM2ZmMzNmQwLTg5ODYtNDUzNS05OWU3LTQwMWZhMTdmZWZmOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIxMFQyMjA2MjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wN2RkY2MzNmFiOTRmNWM0MGM5NWU3ODZlMDExMTc1NzliMzc0YTJkNjY5MjcxODc3MzkwM2M3MTQ3YTNjZTExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.tWtlJeIRYt7VPD1RGCt0epzADJ4-dCQJmqiUtaJFGFw"
-            alt="Sanyam Shandilya"
-          />
-          <p class="centered">
-            Regression Streamlit Web App
-          </p>
-        </div>
-        <div class="domain-img-container img-fluid project-card">
-          <img
-            class="project-img"
-            src="https://private-user-images.githubusercontent.com/106344462/240226191-d32bf631-2dd4-43b0-b940-64d511a28903.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc2MDMyMDQsIm5iZiI6MTcwNzYwMjkwNCwicGF0aCI6Ii8xMDYzNDQ0NjIvMjQwMjI2MTkxLWQzMmJmNjMxLTJkZDQtNDNiMC1iOTQwLTY0ZDUxMWEyODkwMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIxMFQyMjA4MjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMzA5NDcxNzg5NWMwYzBkOGFhNGY0M2NkZjA5YWZjNGU3ZDc0ZTk0NGVmYjQ3Y2I0NWZiZDdjZGMyNzU3NTQ0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.UZ18LtlKflmEL4w_X2V8rvAAe6qVvWXBHR9-_XTvzkI"
-            alt="Sanyam Shandilya"
-          />
-          <p class="centered">
-            Stock Trend Predictor with StreamLit
-          </p>
-        </div>
+      <div class="domain-item">
+        <a href="https://github.com/Sanyam-Shandilya/regression_webapp_wine">
+          <div class="domain-img-container project-card">
+            <img
+              class="project-img"
+              src="images\projects\regression wine.png"
+              alt="Sanyam Shandilya"
+            />
+            <p class="centered">Regression Streamlit Web App</p>
+          </div>
+        </a>
       </div>
-      <div class="row">
-        <div class="domain-img-container img-fluid project-card">
-          <img
-            class="project-img"
-            src="https://private-user-images.githubusercontent.com/106344462/240237807-fe20290d-8afe-4891-b5f3-3abf46634a61.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc2MDMyNzIsIm5iZiI6MTcwNzYwMjk3MiwicGF0aCI6Ii8xMDYzNDQ0NjIvMjQwMjM3ODA3LWZlMjAyOTBkLThhZmUtNDg5MS1iNWYzLTNhYmY0NjYzNGE2MS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIxMFQyMjA5MzJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zZTFkOTgzY2QyMTM0MDRjNGUyZDQ3ZTFlZjY4NDRlOTA4MjhmOTdkNjZlNmVmYTMwZDQ1ZTI1MDA4Y2JmZGIyJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.hI8QogLsVJ_vdZP9zKyzLhm1ePhrzsduiACEeedLZF4"
-            alt="Sanyam Shandilya"
-          />
-          <p class="centered">
-            Binary Classification Web App
-          </p>
-        </div>
-        <div class="domain-img-container img-fluid project-card">
-          <img
-            class="project-img"
-            src="https://private-user-images.githubusercontent.com/106344462/240234816-36fc36d0-8986-4535-99e7-401fa17feff8.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc2MDMwODgsIm5iZiI6MTcwNzYwMjc4OCwicGF0aCI6Ii8xMDYzNDQ0NjIvMjQwMjM0ODE2LTM2ZmMzNmQwLTg5ODYtNDUzNS05OWU3LTQwMWZhMTdmZWZmOC5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIxMFQyMjA2MjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wN2RkY2MzNmFiOTRmNWM0MGM5NWU3ODZlMDExMTc1NzliMzc0YTJkNjY5MjcxODc3MzkwM2M3MTQ3YTNjZTExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.tWtlJeIRYt7VPD1RGCt0epzADJ4-dCQJmqiUtaJFGFw"
-            alt="Sanyam Shandilya"
-          />
-          <p class="centered">
-            Regression Streamlit Web App
-          </p>
-        </div>
-        <div class="domain-img-container img-fluid project-card">
-          <img
-            class="project-img"
-            src="https://private-user-images.githubusercontent.com/106344462/240226191-d32bf631-2dd4-43b0-b940-64d511a28903.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDc2MDMyMDQsIm5iZiI6MTcwNzYwMjkwNCwicGF0aCI6Ii8xMDYzNDQ0NjIvMjQwMjI2MTkxLWQzMmJmNjMxLTJkZDQtNDNiMC1iOTQwLTY0ZDUxMWEyODkwMy5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMjEwJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDIxMFQyMjA4MjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0wMzA5NDcxNzg5NWMwYzBkOGFhNGY0M2NkZjA5YWZjNGU3ZDc0ZTk0NGVmYjQ3Y2I0NWZiZDdjZGMyNzU3NTQ0JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.UZ18LtlKflmEL4w_X2V8rvAAe6qVvWXBHR9-_XTvzkI"
-            alt="Sanyam Shandilya"
-          />
-          <p class="centered">
-            Stock Trend Predictor with StreamLit
-          </p>
-        </div>
+      <div class="domain-item">
+        <a href="https://github.com/Sanyam-Shandilya/stock_trend">
+          <div class="domain-img-container project-card">
+            <img
+              class="project-img"
+              src="images\projects\basic stock.png"
+              alt="Sanyam Shandilya"
+            />
+            <p class="centered">Stock Trend Predictor with StreamLit</p>
+          </div>
+        </a>
+      </div>
+      <div class="domain-item">
+        <a
+          href="https://github.com/Sanyam-Shandilya/binary-classification-mushrooms"
+        >
+          <div class="domain-img-container project-card">
+            <img
+              class="project-img"
+              src="images\projects\binary class.png"
+              alt="Sanyam Shandilya"
+            />
+            <p class="centered">Binary Classification Web App</p>
+          </div>
+        </a>
+      </div>
+      <div class="domain-item">
+        <a href="https://github.com/Sanyam-Shandilya/Travel_Dashboard">
+          <div class="domain-img-container project-card">
+            <img
+              class="project-img"
+              src="images\projects\travel dash.png"
+              alt="Sanyam Shandilya"
+            />
+            <p class="centered">Travel Dashboard</p>
+          </div>
+        </a>
+      </div>
+      <div class="domain-item">
+        <a
+          href="https://github.com/Sanyam-Shandilya/binary-classification-mushrooms"
+        >
+          <div class="domain-img-container project-card">
+            <img
+              class="project-img"
+              src="images\projects\travel dash.png"
+              alt="Dashboard"
+            />
+            <p class="centered">Stock Trend Predictor with StreamLit</p>
+          </div>
+        </a>
       </div>
     </div>
 
     <!--Certification section-->
+    <h1 class="domain" id="certificates">Certification</h1>
     <div class="domain-container">
-      <div class="hero-text">
-        <h1>Certification</h1>
+      <div class="domain-item">
+        <a href="https://github.com/Sanyam-Shandilya/">
+          <div class="domain-img-container project-card">
+            <img
+              class="project-img"
+              src="images\certificate\analyze.png"
+              alt="Sanyam Shandilya"
+            />
+            <p class="centered">Sanyam Shandilya Web Developer</p>
+          </div>
+        </a>
       </div>
-      <div class="row">
-      <div class="domain-img-container img-fluid">
-        <img
-          class="domain-img background-image2"
-          src="images\certificate\analyze.png"
-          alt="Sanyam Shandilya"
-        />
-        <div class="domain-text">
-          <h1>Sanyam Shandilya</h1>
-          <h2>Web Developer</h2>
-          <a href="contact.html" class="btn c-yellow">Contact Me</a>
-        </div>
+      <div class="domain-item">
+        <a href="https://github.com/Sanyam-Shandilya/">
+          <div class="domain-img-container project-card">
+            <img
+              class="project-img"
+              src="images\certificate\hack-problem-intermediate.png"
+              alt="Sanyam Shandilya"
+            />
+            <p class="centered">Sanyam Shandilya Web Developer</p>
+          </div>
+        </a>
       </div>
-      <div class="domain-img-container img-fluid">
-        <img
-          class="domain-img background-image2"
-          src="images\certificate\hack-problem-intermediate.png"
-          alt="Sanyam Shandilya"
-        />
-        <div class="domain-text">
-          <h1>Sanyam Shandilya</h1>
-          <h2>Web Developer</h2>
-          <a href="contact.html" class="btn c-yellow">Contact Me</a>
-        </div>
-      </div>
-      <div class="domain-img-container img-fluid">
-        <img
-          class="domain-img background-image2"
-          src="images\certificate\fundamentals.png"
-          alt="Sanyam Shandilya"
-        />
-        <div class="domain-text">
-          <h1>Sanyam Shandilya</h1>
-          <h2>Web Developer</h2>
-          <a href="contact.html" class="btn c-yellow">Contact Me</a>
-        </div>
+      <div class="domain-item">
+        <a href="https://github.com/Sanyam-Shandilya/">
+          <div class="domain-img-container project-card">
+            <img
+              class="project-img"
+              src="images\certificate\fundamentals.png"
+              alt="Sanyam Shandilya"
+            />
+            <p class="centered">Sanyam Shandilya Web Developer</p>
+          </div>
+        </a>
       </div>
     </div>
-    </div>
+
     <!--Skills section-->
+    <h1 class="domain" id="skills">Skills</h1>
     <div class="domain-container">
-      <h1>Skills</h1>
+      <div class="domain-item">
+        <a href="https://github.com/Sanyam-Shandilya/">
+          <div class="domain-img-container project-card">
+            <img
+              class="project-img"
+              src="images\certificate\analyze.png"
+              alt="Sanyam Shandilya"
+            />
+            <p class="centered">Sanyam Shandilya Web Developer</p>
+          </div>
+        </a>
+      </div>
     </div>
+
     <!--Education section-->
-    <div class="domain-container">
-      <h1>Education</h1>
-    </div>
+    <h1 class="domain" id="education">Education</h1>
+
     <!--Contact section-->
+    <h1 class="domain" id="contact">Contact</h1>
     <div class="domain-container">
-      <h1>Contact</h1>
       <div class="contact-card">
         <form action="POST" name="contact" netlify>
           <div class="row mb-1">
@@ -294,17 +361,16 @@
         </form>
       </div>
     </div>
-    <div class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <h1>Sanyam Shandilya</h1>
-            <h2>Web Developer</h2>
-            <a href="contact.html" class="btn c-yellow">Contact Me</a>
-          </div>
-        </div>
-      </div>
-    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
     <script type="text/javascript" src="js\main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e06ba6da9c.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

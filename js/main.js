@@ -1,28 +1,4 @@
 console.log("hi");
-const toogle = document.getElementById("toogle");
-const body = document.querySelector("body");
-const jumbo = document.getElementsByClassName("navbar");
-
-toogle.addEventListener("click", () => {
-    var img_toogle = toogle.querySelector("img");
-    if (body.classList.contains("c-light")){
-        img_toogle.src = "images/moon.png";
-        body.classList.remove("c-light");
-        body.classList.add("c-dark");
-        for (var i = 0; i < jumbo.length; i++) {
-            jumbo[i].style.backgroundColor = '#264653';
-            jumbo[i].style.color = "#FEFAE0";
-        }
-    }else{
-        img_toogle.src = "images/sun.png";
-        body.classList.add("c-light");
-        body.classList.remove("c-dark");
-        for (var i = 0; i < jumbo.length; i++) {
-            jumbo[i].style.backgroundColor = "#FEFAE0";
-            jumbo[i].style.color = '#264653';
-        }
-    }
-});
 
 var TxtType = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -76,8 +52,19 @@ window.onload = function() {
   }
   // INJECT CSS
   var css = document.createElement("style");
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.15em solid #E76F51}";
+  css.innerHTML = ".typewrite > .wrap { border-right: 0.1em solid #F18F01;}";
   
   document.body.appendChild(css);
 };
 
+function openNav() {
+  document.getElementById("mySidebar").style.width = "50%";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+}
+
+function scrollToId(id) {
+  document.getElementById(id).scrollIntoView();
+}
